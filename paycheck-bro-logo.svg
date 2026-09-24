@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="420" viewBox="0 0 1450 420" role="img" aria-labelledby="title desc">
+  <title id="title">Paycheck Bro logo</title>
+  <desc id="desc">A green dollar coin beside the Paycheck Bro wordmark.</desc>
+  <g transform="translate(12 12)">
+    <rect width="396" height="396" rx="118" fill="#10231f" stroke="#34d399" stroke-width="10"/>
+    <g transform="translate(78 78) scale(10)" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+      <path d="M12 18V6"/>
+    </g>
+  </g>
+  <g transform="translate(470 62)">
+    <text x="0" y="146" fill="#f8fafc" font-family="Inter, Arial, Helvetica, sans-serif" font-size="142" font-weight="900" letter-spacing="-4">PAYCHECK</text>
+    <text x="6" y="276" fill="#34d399" font-family="Inter, Arial, Helvetica, sans-serif" font-size="78" font-weight="800" letter-spacing="48">BRO</text>
+  </g>
+</svg>
