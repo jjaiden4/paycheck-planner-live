@@ -1,56 +1,15 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paycheck Bro — Plan Every Paycheck</title>
-    <meta name="description" content="A simple paycheck planner for bills, weekly expenses, debt, and savings." />
-    <meta property="og:title" content="Paycheck Bro — Plan Every Paycheck" />
-    <meta property="og:description" content="A simple paycheck planner for bills, weekly expenses, debt, and savings." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" type="image/png" href="./paycheck-bro-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
-    <script>
-      // Migrate existing visitors to the light default once; retain later choices.
-      try {
-        if (localStorage.getItem('paycheck-bro-light-default-v1') !== '1') {
-          localStorage.setItem('paycheck-bro-theme', 'light');
-          localStorage.setItem('paycheck-bro-light-default-v1', '1');
-        }
-      } catch (_) {}
-    </script>
-    <style>
-      /* The purchase screen is a clear, light preview of the sample planner. */
-      #root > div:has([class~="blur-[4px]"]) { background:#eaf4f8; color:#102a43; color-scheme:light; }
-      #root > div:has([class~="blur-[4px]"]) [class~="text-white"],
-      #root > div:has([class~="blur-[4px]"]) [class~="text-gray-200"],
-      #root > div:has([class~="blur-[4px]"]) [class~="text-gray-300"] { color:#102a43; }
-      #root > div:has([class~="blur-[4px]"]) [class~="text-gray-400"] { color:#627d8a; }
-      #root > div:has([class~="blur-[4px]"]) [class*="border-white/"] { border-color:#d7e5ea; }
-      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#090909]"],
-      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#0b0b0b]"],
-      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#141414]"],
-      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#161616]"],
-      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#0c1514]/95"] { background:#fff; }
-      #root > div:has([class~="blur-[4px]"]) [class~="text-emerald-400"] { color:#00896c; }
-      #root > div:has([class~="blur-[4px]"]) [class~="text-cyan-400"] { color:#087f9c; }
-      #root > div:has([class~="blur-[4px]"]) [class~="text-amber-400"] { color:#986400; }
-      #root > div:has([class~="blur-[4px]"]) [class~="text-rose-400"] { color:#bd3157; }
-      #root > div:has([class~="blur-[4px]"]) [class~="text-violet-400"] { color:#7650b5; }
-      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#101010]"] { background:#fff; }
-      #root > div:has([class~="blur-[4px]"]) [class~="text-emerald-300"] { color:#00896c; }
-      [class~="blur-[4px]"][class~="brightness-[0.56]"] { filter:none; }
-      #root > div:has([class~="blur-[4px]"]) [class~="backdrop-blur-[1px]"] { display:none; }
-      #root > div:has([class~="blur-[4px]"]) [class~="backdrop-blur-xl"] { backdrop-filter:none; }
-    </style>
-    <script type="module" crossorigin src="./assets/index-BHeUi024.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Dc1epB4K.css">
-  </head>
-  <body class="bg-[#eaf4f8] text-slate-800 antialiased selection:bg-emerald-500 selection:text-black min-h-screen">
-    <div id="root"></div>
-  </body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paycheck Bro — Your Budget, Made Simple</title><meta name="description" content="A simple, colorful monthly budget spreadsheet for Excel and Google Sheets. Get the Paycheck Bro Planner for $9.99, paid once."><link rel="icon" href="./paycheck-bro-icon.png"><style>
+:root{--ink:#102a43;--muted:#526b7b;--line:#dae4ea;--sage:#a9d8be;--blue:#8fc7ee;--pink:#f5a6b8;--gold:#f5d38a;--lavender:#c4b1ec}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fafbfc;color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.5}a{color:inherit}header{max-width:1280px;margin:auto;padding:22px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;font-size:22px;letter-spacing:-.7px}.brand img{width:43px;height:43px;object-fit:contain}.existing{font-size:13px;color:var(--muted);text-underline-offset:4px}.hero{max-width:1280px;margin:24px auto 70px;padding:0 32px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(290px,1fr);gap:48px;align-items:center}.preview{margin:0;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 18px 60px #102a430a;overflow:hidden}.preview-bar{padding:13px 18px;border-bottom:1px solid var(--line);display:flex;gap:7px}.dot{width:9px;height:9px;border-radius:50%;background:var(--pink)}.dot:nth-child(2){background:var(--gold)}.dot:nth-child(3){background:var(--sage)}.preview img{display:block;width:100%;height:auto}.preview figcaption{padding:12px 18px;text-align:center;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}.eyebrow{display:inline-block;font-weight:800;letter-spacing:1.5px;font-size:11px;background:#e9e2f7;padding:8px 12px;border-radius:7px}h1{font-size:clamp(38px,4.2vw,58px);line-height:1.07;letter-spacing:-2px;margin:20px 0}p{color:var(--muted);font-size:17px}.price{display:flex;align-items:baseline;gap:12px;margin:26px 0 14px}.price strong{font-size:40px;line-height:1;font-weight:900;letter-spacing:-1px}.price span{font-size:14px;color:var(--muted)}.buy{display:block;width:100%;background:var(--ink);color:#fff;border:0;border-radius:10px;padding:17px;font:800 16px Arial;text-decoration:none;text-align:center;cursor:pointer}.buy:hover{background:#21465f}.buy:focus-visible{outline:3px solid var(--lavender);outline-offset:4px}.buy[disabled]{opacity:.65;cursor:default}.purchase-note{text-align:center;font-size:12px;margin:9px 0 22px}.includes{list-style:none;padding:0;margin:0;display:grid;gap:9px;font-size:14px}.includes li:before{content:'✓';color:#367556;font-weight:bold;margin-right:10px}.section{max-width:1120px;padding:0 32px;margin:0 auto 70px}.section h2{font-size:30px;letter-spacing:-1px;margin:0 0 12px}.categories{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}.categories span{padding:10px 19px;border-radius:8px;font-size:14px;font-weight:800;background:var(--sage)}.categories span:nth-child(2){background:var(--blue)}.categories span:nth-child(3){background:var(--pink)}.categories span:nth-child(4){background:var(--gold)}.categories span:nth-child(5){background:var(--lavender)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:30px}.step{border-top:3px solid var(--blue);padding-top:18px}.step:nth-child(2){border-color:var(--pink)}.step:nth-child(3){border-color:var(--lavender)}.step h3{font-size:17px;margin:0 0 8px}.step p{font-size:14px;margin:0}.faq{max-width:750px}details{padding:20px 0;border-bottom:1px solid var(--line)}summary{font-size:16px;font-weight:700;cursor:pointer}details p{font-size:14px;margin-bottom:0}footer{max-width:1280px;margin:auto;border-top:1px solid var(--line);padding:25px 32px;display:flex;justify-content:space-between;gap:20px;font-size:12px;color:var(--muted)}.draft-note{font-size:12px;text-align:center;background:#fff4df;padding:8px;color:#785b1d}
+@media(max-width:800px){header{padding:17px 20px}.brand{font-size:19px}.brand img{width:34px;height:34px}.existing{font-size:11px}.hero{display:flex;flex-direction:column;margin:12px auto 48px;padding:0 20px;gap:25px}.preview{width:100%;border-radius:12px}.preview-bar{padding:10px 14px}.preview figcaption{font-size:10px}.copy{width:100%}h1{font-size:39px;margin:14px 0;letter-spacing:-1.4px}.copy>p{font-size:16px;margin:0}.price{margin:22px 0 13px}.price strong{font-size:35px}.section{padding:0 20px;margin-bottom:48px}.section h2{font-size:26px}.section>p{font-size:16px}.steps{grid-template-columns:1fr;gap:22px}.categories{gap:7px}.categories span{padding:8px 12px;font-size:12px}footer{padding:22px 20px}}
+</style></head><body>
+<header><a class="brand" href="./"><img src="./paycheck-bro-icon.png" alt="">PAYCHECK BRO</a><a class="existing" href="./app.html">Existing website customer?</a></header>
+<main>
+<section class="hero">
+<figure class="preview"><div class="preview-bar" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><img src="./planner-preview.png" alt="Filled Paycheck Bro budget spreadsheet with color-coded income, bills, expenses, debt and savings, plus three graphs"><figcaption>A filled example of the spreadsheet you get.</figcaption></figure>
+<div class="copy"><span class="eyebrow">EXCEL + GOOGLE SHEETS</span><h1>Your paycheck.<br>A clear plan.</h1><p>Put your income, bills, expenses, debt and savings in one simple, colorful spreadsheet.</p><div class="price"><strong>$9.99</strong><span>One-time purchase</span></div><button class="buy" disabled aria-describedby="checkout-status">Get the Planner — $9.99</button><p class="purchase-note" id="checkout-status">Checkout being prepared · No subscription</p><ul class="includes"><li>Editable Excel workbook</li><li>Import into Google Sheets</li><li>Blank planner + filled example</li><li>Automatic totals and three budget graphs</li><li>Reuse it every month</li></ul></div>
+</section>
+<section class="section"><h2>Everything has a place.</h2><p>One amount per item. Clear boxes to type in. Totals that update as you go.</p><div class="categories"><span>Income</span><span>Bills</span><span>Expenses</span><span>Debt</span><span>Savings</span></div><div class="steps"><div class="step"><h3>1. Download your planner</h3><p>Get the workbook and quick-start instructions after your purchase.</p></div><div class="step"><h3>2. Make it yours</h3><p>Open in Excel, or import into Google Sheets. Enter your month, income and amounts.</p></div><div class="step"><h3>3. See what’s left</h3><p>Your totals and graphs update automatically. Duplicate the blank planner for your next month.</p></div></div></section>
+<section class="section faq"><h2>A few quick answers.</h2><details><summary>Is this a subscription?</summary><p>No. Pay $9.99 once and keep your copy of the downloadable planner.</p></details><details><summary>Can I use it in Google Sheets?</summary><p>Yes. Import the included Excel workbook into Google Sheets. The download includes instructions.</p></details><details><summary>Can I change the categories and item names?</summary><p>You can rename the items in each section and enter your own amounts. Keep the formula cells intact so the automatic totals continue to work.</p></details><details><summary>Do I need to connect a bank account?</summary><p>No. You enter your own income and budget amounts.</p></details><details><summary>What if I already purchased website access?</summary><p>You can still open the original web planner using the existing-customer link at the top of this page.</p></details></section>
+</main><footer><span>Paycheck Bro</span><span>Your budget. Your copy.</span></footer>
+</body></html>
