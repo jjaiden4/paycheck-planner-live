@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paycheck Bro — Plan Every Paycheck</title>
+    <meta name="description" content="A simple paycheck planner for bills, weekly expenses, debt, and savings." />
+    <meta property="og:title" content="Paycheck Bro — Plan Every Paycheck" />
+    <meta property="og:description" content="A simple paycheck planner for bills, weekly expenses, debt, and savings." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="./paycheck-bro-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <script>
+      // Migrate existing visitors to the light default once; retain later choices.
+      try {
+        if (localStorage.getItem('paycheck-bro-light-default-v1') !== '1') {
+          localStorage.setItem('paycheck-bro-theme', 'light');
+          localStorage.setItem('paycheck-bro-light-default-v1', '1');
+        }
+      } catch (_) {}
+    </script>
+    <style>
+      /* The purchase screen is a clear, light preview of the sample planner. */
+      #root > div:has([class~="blur-[4px]"]) { background:#eaf4f8; color:#102a43; color-scheme:light; }
+      #root > div:has([class~="blur-[4px]"]) [class~="text-white"],
+      #root > div:has([class~="blur-[4px]"]) [class~="text-gray-200"],
+      #root > div:has([class~="blur-[4px]"]) [class~="text-gray-300"] { color:#102a43; }
+      #root > div:has([class~="blur-[4px]"]) [class~="text-gray-400"] { color:#627d8a; }
+      #root > div:has([class~="blur-[4px]"]) [class*="border-white/"] { border-color:#d7e5ea; }
+      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#090909]"],
+      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#0b0b0b]"],
+      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#141414]"],
+      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#161616]"],
+      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#0c1514]/95"] { background:#fff; }
+      #root > div:has([class~="blur-[4px]"]) [class~="text-emerald-400"] { color:#00896c; }
+      #root > div:has([class~="blur-[4px]"]) [class~="text-cyan-400"] { color:#087f9c; }
+      #root > div:has([class~="blur-[4px]"]) [class~="text-amber-400"] { color:#986400; }
+      #root > div:has([class~="blur-[4px]"]) [class~="text-rose-400"] { color:#bd3157; }
+      #root > div:has([class~="blur-[4px]"]) [class~="text-violet-400"] { color:#7650b5; }
+      #root > div:has([class~="blur-[4px]"]) [class~="bg-[#101010]"] { background:#fff; }
+      #root > div:has([class~="blur-[4px]"]) [class~="text-emerald-300"] { color:#00896c; }
+      [class~="blur-[4px]"][class~="brightness-[0.56]"] { filter:none; }
+      #root > div:has([class~="blur-[4px]"]) [class~="backdrop-blur-[1px]"] { display:none; }
+      #root > div:has([class~="blur-[4px]"]) [class~="backdrop-blur-xl"] { backdrop-filter:none; }
+    </style>
+    <script type="module" crossorigin src="./assets/index-BHeUi024.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dc1epB4K.css">
+  </head>
+  <body class="bg-[#eaf4f8] text-slate-800 antialiased selection:bg-emerald-500 selection:text-black min-h-screen">
+    <div id="root"></div>
+  </body>
+</html>
